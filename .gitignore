@@ -40,5 +40,5 @@ Thumbs.db
 node_modules
 *.js.map
 *.css.map
-public/bundle.css
-public/bundle.js
+public/*.css
+public/*.js
