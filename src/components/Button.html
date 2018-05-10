@@ -1,0 +1,44 @@
+<button
+   type="{type}"
+   class="{css}"
+>
+   {text}
+</button>
+
+<script>
+export default {
+   computed: {
+      type: ({type}) => type || 'button',
+      css: ({ variant, size }) => {
+         const classList = {
+            'button': true,
+            'button-outline': variant === 'outline',
+            'button-clear': variant === 'clear',
+            'button-large': size === 'large',
+            'button-small': size === 'small'
+         };
+
+         return Object.keys(classList).filter(name => classList[name]).join(' ');
+      }
+   }
+}
+</script>
+
+<style>
+@import '../../node_modules/milligram-cssnext/src/_Color.css';
+@import '../../node_modules/milligram-cssnext/src/_Button.css';
+
+.button-small {
+  font-size: .8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+}
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}
+</style>
