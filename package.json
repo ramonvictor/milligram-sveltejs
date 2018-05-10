@@ -1,6 +1,6 @@
 {
   "name": "milligram-sveltejs",
-  "description": "SevelteJS wrapper for milligram.css",
+  "description": "SvelteJS wrapper for milligram.css",
   "version": "1.0.0",
   "author": "Ramon Victor <ramon.wd@gmail.com>",
   "private": true,
